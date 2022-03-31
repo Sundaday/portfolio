@@ -15,18 +15,12 @@ export default function App() {
           <Route path="/home">
             <Home />
           </Route>
-        </Switch>
-        <Switch>
           <Route path="/about">
             <About />
           </Route>
-        </Switch>
-        <Switch>
           <Route path="/projects">
             <Projects />
           </Route>
-        </Switch>
-        <Switch>
           <Route path="/contact">
             <Contact />
           </Route>
