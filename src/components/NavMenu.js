@@ -31,6 +31,9 @@ const NavMenuStyles = styled.div`
       color: var(--gar-1);
       outline: none;
     }
+    .active {
+      color: var(--white);
+    }
   }
 `;
 
@@ -39,7 +42,9 @@ export default function NavMenu() {
     <NavMenuStyles>
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" exact>
+            Home
+          </NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
