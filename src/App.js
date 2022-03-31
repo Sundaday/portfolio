@@ -12,9 +12,6 @@ export default function App() {
       <Router>
         <NavMenu />
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
           <Route path="/about">
             <About />
           </Route>
@@ -23,6 +20,9 @@ export default function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </Router>
