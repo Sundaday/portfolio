@@ -36,6 +36,31 @@ const NavMenuStyles = styled.div`
       color: var(--white);
     }
   }
+  .mobile-menu-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    display: none;
+    outline: none;
+  }
+  .closeNavIcon {
+    display: none;
+  }
+  @media onlu screen and (max-width: 768px) {
+    .mobile-menu-icon {
+      display: block;
+    }
+    .navItems {
+      transition: 0.3s ease transform;
+      background-color: var(--deep-dark);
+    }
+    .closeNavIcon {
+      display: block;
+    }
+  }
 `;
 
 export default function NavMenu() {
@@ -44,7 +69,7 @@ export default function NavMenu() {
       <div className="mobile-menu-icon">
         <MdMenu />
       </div>
-      <ul>
+      <ul className="navItems">
         <div className="closeNavIcon">
           <MdClose />
         </div>
