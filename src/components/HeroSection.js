@@ -37,6 +37,15 @@ export default function HeroSection() {
                 >
                   IN
                 </a>
+                <li>
+                  <a
+                    href="https://discord.gg/435P33bb3d"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    DI
+                  </a>
+                </li>
               </li>
               <li>
                 <a
@@ -45,15 +54,6 @@ export default function HeroSection() {
                   rel="noreferrer"
                 >
                   GIT
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://discord.gg/435P33bb3d"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  DI
                 </a>
               </li>
             </ul>
