@@ -19,7 +19,11 @@ export default function HeroSection() {
             Programmeur en herbe orienté backend, j'aspire à acquérir la
             philosophie devOps.
           </PText>
-          <Button btnLink="/projects" />
+          <Button
+            btnLink="/projects"
+            btnText="Voir mes projets"
+            outline={false}
+          />
         </div>
       </div>
     </div>
