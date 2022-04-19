@@ -87,7 +87,7 @@ export default function NavMenu() {
       <div className="mobile-menu-icon">
         <MdMenu />
       </div>
-      <ul className="navItems">
+      <ul className={!showNav ? 'navItem shide-item' : 'navItems'}>
         <div
           className="closeNavIcon"
           onClick={() => setShowNav(!showNav)}
