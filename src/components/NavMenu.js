@@ -49,6 +49,9 @@ const NavMenuStyles = styled.div`
     display: none;
   }
   @media only screen and (max-width: 768px) {
+    .hide-item {
+      transform: translateY(calc(-100% - var(--top)));
+    }
     .mobile-menu-icon {
       display: block;
     }
@@ -84,10 +87,16 @@ export default function NavMenu() {
   const [showNav, setShowNav] = useState(false);
   return (
     <NavMenuStyles>
-      <div className="mobile-menu-icon">
+      <div
+        className="mobile-menu-icon"
+        onClick={() => setShowNav(!showNav)}
+        role="button"
+        onKeyDown={() => setShowNav(!showNav)}
+        tabIndex={0}
+      >
         <MdMenu />
       </div>
-      <ul className={!showNav ? 'navItem shide-item' : 'navItems'}>
+      <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
         <div
           className="closeNavIcon"
           onClick={() => setShowNav(!showNav)}
