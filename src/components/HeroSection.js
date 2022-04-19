@@ -27,6 +27,37 @@ export default function HeroSection() {
             <p>Follow me</p>
             <img src={SocialMediaArrow} alt="social media arrow" />
           </div>
+          <div className="hero_social_text">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jonathankochdev"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  IN
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Sundaday"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GIT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.gg/435P33bb3d"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  DI
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
