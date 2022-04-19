@@ -2,6 +2,7 @@ import React from 'react';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button.js';
 import PText from './PText';
+import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 
 export default function HeroSection() {
   return (
@@ -19,11 +20,13 @@ export default function HeroSection() {
             Programmeur en herbe orienté backend, j'aspire à acquérir la
             philosophie devOps.
           </PText>
-          <Button
-            btnLink="/projects"
-            btnText="Voir mes projets"
-            outline={false}
-          />
+          <Button btnLink="/projects" btnText="Voir mes projets" />
+        </div>
+        <div className="hero__social">
+          <div className="hero__social___indicator">
+            <p>Follow me</p>
+            <img src={SocialMediaArrow} alt="social media arrow" />
+          </div>
         </div>
       </div>
     </div>
