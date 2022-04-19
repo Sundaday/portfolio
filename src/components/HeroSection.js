@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroImg from '../assets/images/hero.png';
+import Button from './Button.js';
 import PText from './PText';
 
 export default function HeroSection() {
@@ -18,6 +19,7 @@ export default function HeroSection() {
             Programmeur en herbe orienté backend, j'aspire à acquérir la
             philosophie devOps.
           </PText>
+          <Button btnLink="/projects" />
         </div>
       </div>
     </div>
