@@ -3,6 +3,7 @@ import HeroImg from '../assets/images/hero.png';
 import Button from './Button.js';
 import PText from './PText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
+import ScrollDown from '../assets/images/scroll-down-arrow.svg';
 
 export default function HeroSection() {
   return (
@@ -58,6 +59,10 @@ export default function HeroSection() {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="hero__scrollDown">
+          <p>Scroll</p>
+          <img src={ScrollDown} alt="" />
         </div>
       </div>
     </div>
