@@ -50,6 +50,15 @@ export default function HeroSection() {
               </li>
               <li>
                 <a
+                  href="https://twitter.com/John_Koch_"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  TWI
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://github.com/Sundaday"
                   target="_blank"
                   rel="noreferrer"
