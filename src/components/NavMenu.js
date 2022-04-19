@@ -44,11 +44,15 @@ const NavMenuStyles = styled.div`
     cursor: pointer;
     display: none;
     outline: none;
+    * {
+      pointer-events: none;
+    }
   }
   .closeNavIcon {
     display: none;
   }
   @media only screen and (max-width: 768px) {
+    padding: 0;
     .hide-item {
       transform: translateY(calc(-100% - var(--top)));
     }
@@ -107,18 +111,49 @@ export default function NavMenu() {
           <MdClose />
         </div>
         <li>
-          <NavLink to="/" exact>
+          <NavLink
+            to="/"
+            exact
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink
+            to="/about"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/projects">Projets</NavLink>
+          <NavLink
+            to="/projects"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Projets
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink
+            to="/contact"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </NavMenuStyles>
