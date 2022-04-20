@@ -81,10 +81,63 @@ const HeroStyles = styled.div`
     ul {
       li {
         margin-bottom: 1rem;
-        a {
-          display: inline-block;
-          font-size: 1.3rem;
+      }
+      a {
+        display: inline-block;
+        font-size: 1.6rem;
+        transform: rotate(90deg);
+        letter-spacing: 5px;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .hero {
+      min-height: 750px;
+    }
+    .hero__heading {
+      font-size: 1.4rem;
+      margin-bottom: -3rem;
+      .hero__name {
+        font-size: 4.5rem;
+      }
+    }
+    .hero__img {
+      height: 300px;
+    }
+    .hero__info {
+      margin-top: 3rem;
+    }
+    .hero__social {
+      left: 0px;
+      bottom: -15%;
+      width: 20px;
+      .hero__social__indicator {
+        width: 20px;
+        p {
+          font-size: 1.2rem;
         }
+        img {
+          max-height: 22px;
+        }
+      }
+      .hero__social__text {
+        ul {
+          li {
+            a {
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .hero__scrollDown {
+      right: 0;
+      width: 20px;
+      gap: 1rem;
+      p {
+        font-size: 1.3rem;
       }
     }
   }
@@ -109,7 +162,7 @@ export default function HeroSection() {
             <Button btnLink="/projects" btnText="Voir mes projets" />
           </div>
           <div className="hero__social">
-            <div className="hero__social___indicator">
+            <div className="hero__social__indicator">
               <p>Follow</p>
               <img src={SocialMediaArrow} alt="social media arrow" />
             </div>
@@ -122,6 +175,15 @@ export default function HeroSection() {
                     rel="noreferrer"
                   >
                     IN
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Sundaday"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GIT
                   </a>
                 </li>
                 <li>
@@ -140,15 +202,6 @@ export default function HeroSection() {
                     rel="noreferrer"
                   >
                     TWI
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/Sundaday"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GIT
                   </a>
                 </li>
               </ul>
