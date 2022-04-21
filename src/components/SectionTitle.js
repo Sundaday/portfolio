@@ -1,10 +1,35 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const SectionTitleStyles = styled.div`
+  text-align: center;
+  p {
+    font-family: 'RobotMono Regular';
+    font-size: 2rem;
+  }
+  h2 {
+    font-family: 'Montserrat Bold';
+    font-size: 6rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 768px) {
+    p {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+`;
 
 export default function SectionTitle() {
   return (
-    <div>
-      <p>Ceci est un titre</p>
-      <h1>Ceci est une section</h1>
-    </div>
+    <SectionTitleStyles>
+      <div>
+        <p>Ceci est un titre</p>
+        <h2>Ceci est une section</h2>
+      </div>
+    </SectionTitleStyles>
   );
 }

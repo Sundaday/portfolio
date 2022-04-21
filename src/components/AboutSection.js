@@ -4,7 +4,7 @@ import SectionTitle from './SectionTitle';
 export default function AboutSection() {
   return (
     <div className="contairer">
-      <div className="aboutSection">
+      <div className="aboutSection__left">
         <SectionTitle />
       </div>
     </div>
