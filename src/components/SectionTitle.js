@@ -23,12 +23,15 @@ const SectionTitleStyles = styled.div`
   }
 `;
 
-export default function SectionTitle() {
+export default function SectionTitle({
+  subheading = 'ceci est un sous titre',
+  heading = 'ceci est un titre',
+}) {
   return (
     <SectionTitleStyles>
       <div>
-        <p>Ceci est un titre</p>
-        <h2>Ceci est une section</h2>
+        <p>{subheading}</p>
+        <h2>{heading}</h2>
       </div>
     </SectionTitleStyles>
   );
