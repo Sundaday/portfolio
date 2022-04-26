@@ -28,7 +28,7 @@ export default function SectionTitle({
   heading = 'ceci est un titre',
 }) {
   return (
-    <SectionTitleStyles>
+    <SectionTitleStyles className="section-title">
       <div>
         <p>{subheading}</p>
         <h2>{heading}</h2>

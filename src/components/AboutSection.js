@@ -7,6 +7,7 @@ import AboutImg from '../assets/images/about-sec-img.png';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
+
   .container {
     display: flex;
     align-items: center;
@@ -31,6 +32,42 @@ const AboutSectionStyles = styled.div`
     gap: 2rem;
     margin-top: 2px;
   }
+  @media only screen and (max-width: 950px) {
+    .aboutSection__left {
+      flex: 4;
+    }
+    .aboutSection__right {
+      flex: 3;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .aboutSection__left,
+    .aboutSection__right {
+      width: 100%;
+    }
+    .aboutSection__right {
+      margin-top: 3rem;
+    }
+    .section-title {
+      text-align: center;
+    }
+    .para {
+      margin: 2rem auto 0;
+    }
+    .aboutSection__buttons {
+      flex-direction: column;
+      gap: 0;
+      .button-wrapper,
+      a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 `;
 
 export default function AboutSection() {
@@ -39,7 +76,6 @@ export default function AboutSection() {
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle
-            className="section-title"
             subheading="Laissez moi me présenter"
             heading="A propos"
           />
@@ -48,13 +84,13 @@ export default function AboutSection() {
             internet ! J'essai toujours d'apporter une vision unique au projet
             que j'entreprend.
           </PText>
-          <div className="aboutSection__button">
+          <div className="aboutSection__buttons">
             <Button btnLink="/projects" btnText="Projets" />
             <Button btnLink="/about" btnText="Lisez moi !" outline />
           </div>
-          <div className="aboutSection__right">
-            <img src={AboutImg} alt="" />
-          </div>
+        </div>
+        <div className="aboutSection__right">
+          <img src={AboutImg} alt="Img" />
         </div>
       </div>
     </AboutSectionStyles>
