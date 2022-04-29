@@ -27,12 +27,10 @@ export default function Button({
   outline = false,
 }) {
   return (
-    <div>
-      <ButtonStyle outline={outline} className="button-wrapper">
-        <Link className="button" to={btnLink}>
-          {btnText}
-        </Link>
-      </ButtonStyle>
-    </div>
+    <ButtonStyle outline={outline} className="button-wrapper">
+      <Link className="button" to={btnLink}>
+        {btnText}
+      </Link>
+    </ButtonStyle>
   );
 }
