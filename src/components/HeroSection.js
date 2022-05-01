@@ -174,7 +174,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    IN
+                    iN
                   </a>
                 </li>
                 <li>
