@@ -19,18 +19,20 @@ const ItemStyles = styled.div`
   }
 `;
 
-export default function ServicesSectionItem() {
+export default function ServicesSectionItem({
+  icon = <MdDesktopMac />,
+  title = 'web design',
+  desc = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores\n' +
+    '          atque consectetur culpa dolorem dolores excepturi fuga magni mollitia\n' +
+    '          obcaecati officiis pariatur porro possimus quam reiciendis sapiente,\n' +
+    '          suscipit temporibus vero voluptas?',
+}) {
   return (
     <ItemStyles>
       <div className="servicesItem__icon">
-        <MdDesktopMac />
-        <div className="servicesItem__title">Web Design</div>
-        <PText>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-          atque consectetur culpa dolorem dolores excepturi fuga magni mollitia
-          obcaecati officiis pariatur porro possimus quam reiciendis sapiente,
-          suscipit temporibus vero voluptas?
-        </PText>
+        {icon}
+        <div className="servicesItem__title">{title}</div>
+        <PText>{desc}</PText>
       </div>
     </ItemStyles>
   );

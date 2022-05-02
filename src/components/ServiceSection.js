@@ -25,14 +25,25 @@ const ServicesItemStyles = styled.div`
 export default function ServiceSection() {
   return (
     <ServicesItemStyles>
-      <SectionTitle
-        heading="Services"
-        subheading="Ce que je peux faire pour vous"
-      />
-      <div className="services__allItems">
-        <ServicesSectionItem />
-        <ServicesSectionItem />
-        <ServicesSectionItem />
+      <div className="container">
+        <SectionTitle
+          heading="Services"
+          subheading="Ce que je peux faire pour vous"
+        />
+        <div className="services__allItems">
+          <ServicesSectionItem
+            title="Dev Front"
+            desc="html5 css3 Javascript ES7+"
+          />
+          <ServicesSectionItem
+            title="Dev Back"
+            desc="TS C# ASP.NET Node.js PostgreSQL MongoDB"
+          />
+          <ServicesSectionItem
+            title="Dev Ops"
+            desc="Unix Bash Git Docker Travis"
+          />
+        </div>
       </div>
     </ServicesItemStyles>
   );
