@@ -29,11 +29,9 @@ export default function ServicesSectionItem({
 }) {
   return (
     <ItemStyles>
-      <div className="servicesItem__icon">
-        {icon}
-        <div className="servicesItem__title">{title}</div>
-        <PText>{desc}</PText>
-      </div>
+      <div className="servicesItem__icon">{icon}</div>
+      <div className="servicesItem__title">{title}</div>
+      <PText>{desc}</PText>
     </ItemStyles>
   );
 }

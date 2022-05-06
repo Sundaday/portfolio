@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { MdBuild, MdCode, SiIcloud } from 'react-icons/all';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
 
@@ -27,19 +28,22 @@ export default function ServiceSection() {
     <ServicesItemStyles>
       <div className="container">
         <SectionTitle
-          heading="Services"
+          heading="TechnoStack"
           subheading="Ce que je peux faire pour vous"
         />
         <div className="services__allItems">
           <ServicesSectionItem
+            icon={<MdCode />}
             title="Dev Front"
             desc="html5 css3 Javascript ES7+"
           />
           <ServicesSectionItem
+            icon={<MdBuild />}
             title="Dev Back"
             desc="TS C# ASP.NET Node.js PostgreSQL MongoDB"
           />
           <ServicesSectionItem
+            icon={<SiIcloud />}
             title="Dev Ops"
             desc="Unix Bash Git Docker Travis"
           />
