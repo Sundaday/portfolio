@@ -21,7 +21,7 @@ const ProjectItemStyles = styled.div`
     padding: 1rem;
     border-radius: 12px;
   }
-  .proctItem__title {
+  .projectItem__title {
     font-size: 2.2rem;
   }
   .projectItem__desc {
