@@ -74,7 +74,7 @@ const TestimonialSectionStyles = styled.div`
   .fade-exit-active {
     opacity: 0;
     transform: scale(0.96);
-    transition: 250ms ease-in;
+    transition: 200ms ease-in;
     transition-property: transform, opacity;
   }
 `;
@@ -82,6 +82,7 @@ const TestimonialSectionStyles = styled.div`
 export default function TestimonialsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeSlide = testimonials[activeIndex];
+
   function handleNext() {
     if (activeIndex >= testimonials.length - 1) {
       setActiveIndex(0);
@@ -90,7 +91,7 @@ export default function TestimonialsSection() {
     }
   }
   function handlePrev() {
-    if (activeIndex <= 0) {
+    if (activeIndex === 0) {
       setActiveIndex(testimonials.length - 1);
     } else {
       setActiveIndex((oldIndex) => oldIndex - 1);
@@ -99,22 +100,17 @@ export default function TestimonialsSection() {
   return (
     <TestimonialSectionStyles>
       <div className="container">
-        <SectionTitle heading="Testimonials" subheading="quelques avis" />
+        <SectionTitle subheading="en quelques mots" heading="Avis" />
         <div className="testimonial__wrapper">
           <SwitchTransition component={null}>
-            <CSSTransition
-              keys={activeSlide.id}
-              timeout={300}
-              classNames="fade"
-            >
+            <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="testimonial__info">
                 <div className="testimonial__desc">
                   <PText>{activeSlide.desc}</PText>
                 </div>
                 <h2 className="testimonial__name">{activeSlide.name}</h2>
                 <p className="testimonial__title">
-                  {activeSlide.title}, <br />
-                  {activeSlide.org}
+                  {activeSlide.title}, <br /> {activeSlide.org}
                 </p>
               </div>
             </CSSTransition>
