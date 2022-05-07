@@ -36,22 +36,21 @@ const ProjectItemStyles = styled.div`
   }
 `;
 
-export default function ProjectItem() {
+export default function ProjectItem({
+  img = projectImg,
+  title = 'Project Name',
+  desc = 'lorem',
+}) {
   return (
     <ProjectItemStyles>
       <Link to="/projects" className="projectItem__img">
-        <img src={projectImg} alt="project img" />
+        <img src={img} alt="project img" />
       </Link>
       <div className="projectItem__info">
         <Link to="#">
-          <h3 className="projectItem__title">Projet 1</h3>
+          <h3 className="projectItem__title">{title}</h3>
         </Link>
-        <p className="projectItem__desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-          aliquam amet animi asperiores aspernatur aut autem cupiditate deleniti
-          et facilis incidunt officia officiis optio quod rem tempore tenetur,
-          totam. Doloremque.
-        </p>
+        <p className="projectItem__desc">{desc}</p>
       </div>
     </ProjectItemStyles>
   );
