@@ -4,9 +4,7 @@ import PText from './PText';
 export default function FooterCol() {
   return (
     <div>
-      <div className="container">
-        <PText>prout</PText>
-      </div>
+      <h1>ceci est une colonne</h1>
     </div>
   );
 }
