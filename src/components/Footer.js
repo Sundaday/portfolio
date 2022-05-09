@@ -38,7 +38,16 @@ export default function Footer() {
           </PText>
         </div>
         <div className="footer__col2">
-          <FooterCol />
+          <FooterCol
+            heading="Liens Important"
+            links={[
+              {
+                title: 'Home',
+                path: '/',
+                type: 'Link',
+              },
+            ]}
+          />
         </div>
         <div className="footer__col3">
           <FooterCol />
