@@ -46,6 +46,21 @@ export default function Footer() {
                 path: '/',
                 type: 'Link',
               },
+              {
+                title: 'A propos',
+                path: '/about',
+                type: 'Link',
+              },
+              {
+                title: 'Projets',
+                path: '/projects',
+                type: 'Link',
+              },
+              {
+                title: 'Contact',
+                path: '/contact',
+                type: 'Link',
+              },
             ]}
           />
         </div>
