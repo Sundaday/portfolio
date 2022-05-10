@@ -13,13 +13,13 @@ export default function App() {
       <Router>
         <NavMenu />
         <Switch>
-          <Route path="/about">
+          <Route path="/About">
             <About />
           </Route>
-          <Route path="/projects">
+          <Route path="/Projects">
             <Projects />
           </Route>
-          <Route path="/contact">
+          <Route path="/Contact">
             <Contact />
           </Route>
           <Route path="/">

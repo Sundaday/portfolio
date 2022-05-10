@@ -77,17 +77,17 @@ export default function Footer() {
               },
               {
                 title: 'A propos',
-                path: '/about',
+                path: '/About',
                 type: 'Link',
               },
               {
                 title: 'Projets',
-                path: '/projects',
+                path: '/Projects',
                 type: 'Link',
               },
               {
                 title: 'Contact',
-                path: '/contact',
+                path: '/Contact',
                 type: 'Link',
               },
             ]}

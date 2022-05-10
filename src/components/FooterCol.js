@@ -21,12 +21,12 @@ export default function FooterCol({
     {
       type: 'Link',
       title: 'Home',
-      path: '/home',
+      path: '/',
     },
     {
       type: 'Link',
       title: 'About',
-      path: '/about',
+      path: '/About',
     },
   ],
 }) {
