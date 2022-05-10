@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="Social links"
+            heading="Réseaux Sociaux"
             links={[
               {
                 title: 'LinkedIn',
