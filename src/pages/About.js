@@ -73,11 +73,7 @@ export default function About() {
         <div className="about__info__items">
           <div className="about__info__item">
             <h1 className="about__info___heading">Education</h1>
-            <AboutInfoItem />
-            <AboutInfoItem />
-            <AboutInfoItem />
-            <AboutInfoItem />
-            <AboutInfoItem />
+            <AboutInfoItem title="Education" />
           </div>
         </div>
       </div>
