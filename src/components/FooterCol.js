@@ -19,12 +19,12 @@ export default function FooterCol({
   heading = 'Ceci est un titre',
   links = [
     {
-      type: 'Links',
+      type: 'Link',
       title: 'Home',
       path: '/home',
     },
     {
-      type: 'Links',
+      type: 'Link',
       title: 'About',
       path: '/about',
     },

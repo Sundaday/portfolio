@@ -143,7 +143,7 @@ export default function Footer() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="http://www.linkedin.com/in/jonathankochdev"
+              href="https://www.linkedin.com/in/jonathankochdev"
             >
               John Koch
             </a>{' '}
