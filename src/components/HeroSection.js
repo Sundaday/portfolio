@@ -74,7 +74,7 @@ const HeroStyles = styled.div`
   }
   .hero__scrollDown {
     img {
-      min-height: 70px;
+      max-height: 70px;
     }
   }
   .hero__social__text {
@@ -209,7 +209,7 @@ export default function HeroSection() {
           </div>
           <div className="hero__scrollDown">
             <p>Scroll</p>
-            <img src={ScrollDown} alt="" />
+            <img src={ScrollDown} alt="ScrollDown Arrow" />
           </div>
         </div>
       </div>
