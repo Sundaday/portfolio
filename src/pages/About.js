@@ -113,14 +113,7 @@ export default function About() {
             />
             <AboutInfoItem
               title="Back End"
-              items={[
-                'TS',
-                'C#',
-                'ASP.NET',
-                'Node.js',
-                'PostgreSQL',
-                'MongoDB',
-              ]}
+              items={['Node.js', 'C#', 'ASP.NET', 'PostgreSQL', 'MongoDB']}
             />
             <AboutInfoItem
               title="Dev Ops"
