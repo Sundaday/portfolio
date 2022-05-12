@@ -67,7 +67,7 @@ export default function Projects() {
       <div className="container">
         <SectionTitle
           heading="Projets"
-          subheading="Quelques une de mes projets"
+          subheading="Quelques un de mes projets"
         />
         <div className="projects__searchbar">
           <form>
