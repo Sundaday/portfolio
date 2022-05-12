@@ -13,7 +13,7 @@ const ContactFormStyles = styled.form`
   input,
   textarea {
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1.2rem;
     color: var(--gray-1);
     background-color: var(--deep-dark);
@@ -48,7 +48,7 @@ export default function ContactForm() {
       <form>
         <div className="form-group">
           <label htmlFor="name">
-            Votre nom
+            Votre Nom
             <input
               type="text"
               id="name"
@@ -72,7 +72,7 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="message">
-            Votre nom
+            Votre message
             <textarea
               type="text"
               id="message"

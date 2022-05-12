@@ -5,7 +5,7 @@ import PText from './PText';
 
 const MapStyles = styled.div`
   background: url(${MapImg}) no-repeat center / cover;
-  min-height: 400px;
+  max-height: 400px;
   .container {
     position: relative;
     min-height: 400px;
