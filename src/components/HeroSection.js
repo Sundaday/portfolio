@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.png';
+import HeroImg from '../assets/images/codes-coding-computer-247791-1420x670.jpg';
 import Button from './Button.js';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDown from '../assets/images/scroll-down-arrow.svg';
@@ -157,7 +157,7 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              Programmeur FullStack, j'aspire à acquérir la philosophie devOps.
+              Programmeur Junior.
             </PText>
             <Button btnLink="/projects" btnText="Voir mes projets" />
           </div>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import PText from './PText';
 import Button from './Button';
-import AboutImg from '../assets/images/about-sec-img.png';
+import AboutImg from '../assets/images/code terminal php databases 2848x2136 wallpaper_www.miscellaneoushi.com_68.jpg';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -14,9 +14,12 @@ const AboutSectionStyles = styled.div`
     justify-content: flex-start;
     text-align: left;
   }
-  .aboutSection__left,
+  .aboutSection__left{
+    flex: 1;
+  }
   .aboutSection__right {
     flex: 1;
+    border: 2px solid var(--gray-1);
   }
   .section-title {
     text-align: left;
