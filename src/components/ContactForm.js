@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 
-const ContactFormStyles = styled.form`
+const ContactFormStyles = styled.div`
   width: 100%;
   .form-group {
     width: 100%;
@@ -40,21 +41,29 @@ const ContactFormStyles = styled.form`
 `;
 
 export default function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_kfxd0xw', 'template_94n1eha', form.current, 'cBN85iwwL2gaZsF2b')
+      .then((result) => {
+          console.log(result.text);
+          console.log("Message envoyé");
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <ContactFormStyles>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">
             Votre Nom
             <input
               type="text"
               id="name"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              name="user_name"
             />
           </label>
         </div>
@@ -64,9 +73,7 @@ export default function ContactForm() {
             <input
               type="text"
               id="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              name="user_email"
             />
           </label>
         </div>
@@ -77,12 +84,10 @@ export default function ContactForm() {
               type="text"
               id="message"
               name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
             />
           </label>
         </div>
-        <button type="submit">Envoyer</button>
+        <button type="submit" value="Send">Envoyer</button>
       </form>
     </ContactFormStyles>
   );
