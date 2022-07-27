@@ -20,6 +20,10 @@ const AboutSectionStyles = styled.div`
   .aboutSection__right {
     flex: 1;
     border: 2px solid var(--gray-1);
+    border-radius: 1.6rem;
+    img{
+      border-radius: 1.6rem;
+    }
   }
   .section-title {
     text-align: left;

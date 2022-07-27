@@ -5,7 +5,7 @@ import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
-import myResume from '../assets/data/CVJohnKoch.pdf';
+import myCV from '../assets/images/CVJohnKoch.pdf';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -17,6 +17,16 @@ const AboutPageStyles = styled.div`
   }
   .left {
     flex: 3;
+    button {
+      font-size: 2.2rem;
+      background-color: ${(props) =>
+      props.outline ? `transparent` : `var(--gray-1)`};
+      padding: 0.7em 2em;
+      border-radius: 8px;
+      display: inline-block;
+      border: 2px solid var(--gray-1);
+      color: ${(props) => (props.outline ? `var(--gray-1)` : `black`)};
+    }
   }
   .right {
     flex: 2;
@@ -71,6 +81,11 @@ const AboutPageStyles = styled.div`
     .about__info__heading {
       font-size: 3rem;
     }
+    .left{
+      button{
+      font-size: 1.8rem;
+      }
+    }
   }
 `;
 
@@ -93,7 +108,11 @@ export default function About() {
                 d'entreprendre une reconvertion dans l'IT.
               </PText>
             </div>
-            <Button btnLink={myResume} btnText="Téléchargez mon CV" />
+            <a href={myCV} download="myCV">
+              <button type="submit">
+                <b>Téléchargez mon CV</b>
+              </button>
+            </a> 
           </div>
           <div className="right">
             <img src={AboutImg} alt="John koch img" />

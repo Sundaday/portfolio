@@ -37,6 +37,10 @@ const HeroStyles = styled.div`
     height: 600px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
+    border-radius: 1.6rem;
+    img{
+      border-radius: 1.6rem;
+    }
   }
   .hero__info {
     margin-top: -18rem;
