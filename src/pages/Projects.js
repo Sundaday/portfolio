@@ -24,7 +24,6 @@ const ProjectsStyles = styled.div`
     padding: 0.8rem;
     color: var(--black);
     border-radius: 6px;
-    output: none;
     border: none;
   }
   .projects__searchbar .searchIcon {

@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import myResume from '../assets/data/CVJohnKoch.pdf';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -75,6 +76,7 @@ const AboutPageStyles = styled.div`
 
 export default function About() {
   return (
+    
     <AboutPageStyles>
       <div className="container">
         <div className="top-section">
@@ -85,13 +87,13 @@ export default function About() {
             <h2 className="about__heading">DEV</h2>
             <div className="about__info">
               <PText>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquam corporis doloremque modi, perferendis provident quas
-                quibusdam quis ratione, sint temporibus vel veniam veritatis
-                voluptates? Adipisci ducimus nisi odit sunt unde.
+                Suite à dix années dans le commerce, 
+                ma passion pour l'informatique
+                et les nouvelles technologies m'ont convaincu 
+                d'entreprendre une reconvertion dans l'IT.
               </PText>
             </div>
-            <Button btnLink="#" btnText="Téléchargez mon Cv" />
+            <Button btnLink={myResume} btnText="Téléchargez mon CV" />
           </div>
           <div className="right">
             <img src={AboutImg} alt="John koch img" />
@@ -109,15 +111,19 @@ export default function About() {
             <h1 className="about__info__heading">Skills</h1>
             <AboutInfoItem
               title="Front End"
-              items={['HTML5', 'CSS3', 'JavaScript', 'ES7+', 'React']}
+              items={['HTML5', 'CSS3', 'ES7+', 'Angular', 'React']}
             />
             <AboutInfoItem
               title="Back End"
-              items={['Node.js', 'C#', 'ASP.NET', 'PostgreSQL', 'MongoDB']}
+              items={['Java', 'C#', 'ASP.NET', 'PostgreSQL', 'MongoDB']}
+            />
+            <AboutInfoItem
+              title="DataBase"
+              items={['PostgreSQL', 'MongoDB', 'Azure']}
             />
             <AboutInfoItem
               title="Dev Ops"
-              items={['Ubuntu', 'Bash', 'Git', 'Docker', 'Travis']}
+              items={['Git', 'Netlify', 'Docker', 'Travis']}
             />
           </div>
           <div className="about__info__item">
