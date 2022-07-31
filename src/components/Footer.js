@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">John Koch</h1>
           <PText>
-            Developpeur passionné à votre service
+            Développeur passionné à l'écoute de vos besoins, vous propose des solutions et un accompagnement adapté à la réalisation de vos projets.
           </PText>
         </div>
         <div className="footer__col2">

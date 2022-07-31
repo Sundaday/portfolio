@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/codes-coding-computer-247791-1420x670.jpg';
+import HeroImg from '../assets/images/CAT_4575.okn&b.jpg';
 import Button from './Button.js';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDown from '../assets/images/scroll-down-arrow.svg';
@@ -43,6 +43,7 @@ const HeroStyles = styled.div`
     }
   }
   .hero__info {
+    font-size: rem;
     margin-top: -18rem;
   }
   .hero__social,
