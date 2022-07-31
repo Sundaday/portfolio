@@ -18,7 +18,7 @@ const ProjectItemStyles = styled.div`
   .projectItem__info {
     margin-top: 1rem;
     background-color: var(--deep-dark);
-    padding: 1rem;
+    padding:1rem;
     border-radius: 12px;
   }
   .projectItem__title {
@@ -40,14 +40,15 @@ export default function ProjectItem({
   img = projectImg,
   title = 'Project Name',
   desc = 'lorem',
+  link = '/'
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
-        <img src={img} alt="project img" />
-      </Link>
+      <a href={link} className="projectItem__img" target="_blank">
+        <img src={img} alt="project img"></img>
+      </a>
       <div className="projectItem__info">
-        <Link to="#">
+        <Link to={"#"}>
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>

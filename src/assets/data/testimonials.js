@@ -1,27 +1,19 @@
 const testimonials = [
   {
     id: 1,
-    name: 'Shaif Arfan',
-    title: 'CEO',
-    org: 'WEB CIFAR',
+    name: 'Florent Champigny',
+    title: 'Mentor',
+    org: 'OC',
     desc:
-      'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
+      "Cet étudiant est très passionné par ce qu'il fait, il a su apprendre les bases de la programmation vite, et sa curiosité a été un atout non négligeable pour parfaire sa formation. Je le recommande à toute boîte qui souhaite avoir un profil jeune et dynamique, il arrivera à s'intégrer facilement dans tout type d'équipes !",
   },
   {
     id: 2,
-    name: 'Fahim Elahe',
-    title: 'Co-founder',
-    org: 'Kreetive',
+    name: 'Patrice Randon',
+    title: 'Coach',
+    org: 'OC',
     desc:
-      'Really amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing. Do really high-quality work.',
-  },
-  {
-    id: 3,
-    name: 'Sayed',
-    title: 'Marketing Head',
-    org: 'Eleven Dawn',
-    desc:
-      'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
+      "Impliqué dans l'appropriation des outils de communication, il a su se montrer créatif et persévérant tout au long du parcours de coaching mis en place par Openclassrooms. Enthousiaste et proactif, je suis convaincu que l'état d'esprit positif de Jonathan et son dynamisme retiendront votre attention.",
   },
 ];
 export default testimonials;

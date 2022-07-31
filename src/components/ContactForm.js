@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 
-const ContactFormStyles = styled.div`
+const ContactFormStyles = styled.form`
   width: 100%;
   .form-group {
     width: 100%;
@@ -55,8 +55,7 @@ export default function ContactForm() {
       });
   };
   return (
-    <ContactFormStyles>
-      <form ref={form} onSubmit={sendEmail}>
+    <ContactFormStyles ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">
             Votre Nom
@@ -88,7 +87,6 @@ export default function ContactForm() {
           </label>
         </div>
         <button type="submit" value="Send">Envoyer</button>
-      </form>
     </ContactFormStyles>
   );
 }

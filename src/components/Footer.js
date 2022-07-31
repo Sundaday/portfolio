@@ -60,10 +60,7 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">John Koch</h1>
           <PText>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-            dicta ducimus, earum inventore, ipsam laudantium neque officiis quia
-            reiciendis rem sequi voluptate. Assumenda dolores eaque in placeat
-            possimus, qui quidem?
+            Developpeur passionné à votre service
           </PText>
         </div>
         <div className="footer__col2">
@@ -95,7 +92,7 @@ export default function Footer() {
         </div>
         <div className="footer__col3">
           <FooterCol
-            heading="Info Contact"
+            heading="Informations Contact"
             links={[
               {
                 title: '+336 461 536 45',

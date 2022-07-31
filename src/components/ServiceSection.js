@@ -28,24 +28,24 @@ export default function ServiceSection() {
     <ServicesItemStyles>
       <div className="container">
         <SectionTitle
-          heading="TechnoStack"
+          heading="Services"
           subheading="Ce que je peux faire pour vous"
         />
         <div className="services__allItems">
           <ServicesSectionItem
             icon={<MdCode />}
-            title="Dev Front"
-            desc="html5 css3 Javascript ES7+"
+            title="Web Dev"
+            desc="Je fais des sites fonctionnel utile aux demandes de chacun(e)."
           />
           <ServicesSectionItem
             icon={<MdBuild />}
-            title="Dev Back"
-            desc="TS C# ASP.NET Node.js PostgreSQL MongoDB"
+            title="Mobile Dev"
+            desc="J'ai également la possibilité de faire la portabilité de votre projet"
           />
           <ServicesSectionItem
             icon={<SiIcloud />}
-            title="Dev Ops"
-            desc="Unix Bash Git Docker Travis"
+            title="Software Dev"
+            desc="Je peux aussi développer toute sorte de logiciel executable sur Windows"
           />
         </div>
       </div>
