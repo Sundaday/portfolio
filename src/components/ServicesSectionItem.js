@@ -23,9 +23,9 @@ export default function ServicesSectionItem({
   icon = <MdDesktopMac />,
   title = 'web design',
   desc = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores\n' +
-    '          atque consectetur culpa dolorem dolores excepturi fuga magni mollitia\n' +
-    '          obcaecati officiis pariatur porro possimus quam reiciendis sapiente,\n' +
-    '          suscipit temporibus vero voluptas?',
+    'atque consectetur culpa dolorem dolores excepturi fuga magni mollitia\n' +
+    'obcaecati officiis pariatur porro possimus quam reiciendis sapiente,\n' +
+    'suscipit temporibus vero voluptas?',
 }) {
   return (
     <ItemStyles>

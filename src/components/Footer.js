@@ -68,12 +68,12 @@ export default function Footer() {
             heading="Liens Important"
             links={[
               {
-                title: 'Home',
+                title: 'Accueil',
                 path: '/',
                 type: 'Link',
               },
               {
-                title: 'A propos',
+                title: 'À Propos',
                 path: '/About',
                 type: 'Link',
               },
