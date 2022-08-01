@@ -20,6 +20,7 @@ const projects = [
     desc:
       'An app to help people to get an overview of how they can make the city beautiful.',
     img: GreenCtgImg,
+    link:'https://github.com/Sundaday/SundaBook'
   },
   {
     id: uuidv4(),
